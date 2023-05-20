@@ -82,6 +82,21 @@ Push Commits: Finally, push your changes to the remote repository:
 git push -u origin main
 ```
 This will push your commits to the main branch on the remote repository. Subsequent pushes can be done with git push.
+  
+## Branch Types 
+**Main Branch:** The main branch represents the stable and production-ready state of your project. It usually has names like main or master. It is important to protect this branch and only allow approved changes through pull requests.
+
+**Feature Branch:** Feature branches are used to develop new features or work on specific tasks in isolation. Each feature branch should be created from the main branch and should have a clear and descriptive name that reflects the feature or task it represents. Once the work is completed, the branch can be merged back into the main branch through a pull request.
+
+**Release Branch:** Release branches are used to prepare the codebase for a new release. These branches are created from the main branch when the development for a specific release version is complete. Any bug fixes or minor adjustments can be applied to the release branch before merging it into the main branch and deploying the release.
+
+**Hotfix Branch:** Hotfix branches are used to address critical issues or bugs that require immediate attention. These branches are created from the main branch and are used to develop and test the fix. Once the hotfix is ready, it can be merged into both the main branch and any active release branches.
+
+**Develop Branch:** In some workflows, a develop branch is used as an integration branch for ongoing development. Feature branches are merged into the develop branch, allowing multiple features to be combined and tested together. Once the develop branch is stable and ready for release, it can be merged into the main branch.
+
+Choosing the appropriate branch type depends on your project's needs and team's collaboration style. It's important to establish clear guidelines and naming conventions for branch creation and merging to ensure a smooth and organized development process.
+  
+  
 
 ## Conclusion
 
